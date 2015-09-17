@@ -1,0 +1,16 @@
+- **What did you learn about CSS padding, borders, and margin by doing this challenge?**
+
+I learned that padding is the area between the border and the content of the element, and like anything in CSS, can be scaled to your desired liking. Borders around your content are highly customisable as well, and you can change everything about them from the color, size, shape, and even omit them altogether. Margins play a large role in the placing of objects and how they interact with other elements on your page, since that is the cushion between an element and the surrounding elements. 
+
+-**What did you learn about CSS positioning?**
+
+I learned that there is no "go-to" formula for positioning; there are an almost limitless number of ways to format and position things using a combination of HTML and CSS, so the designer has to be dynamic in his/her approach to laying it all out. It therefore becomes a trial-and-error process (and often frustrating) of referencing your wireframe, applying what you know, and then doing research into the plethora of blogs and guides that exist with a simple Google search when you get stuck. Positioning also becomes a matter of making sure the HTML and CSS are coexisting in working order, but also being spacially aware of borders, margins, floats, and things like absolute/relatve/fixed postiioning.
+
+-**What aspects of your design did you find easiest to implement? What was most difficult?**
+
+The most difficult aspect of design for me to implement is gettin the sizing of everything down so that it can be formatted universally if the browser is different or if the broswer window size changes. Sometimes columns bleed into images and the like, so figuring out how to get everything in its right place can be a bit of a challenge. To get it right it involves a lot of knowing how to use the elements and their attributes properly in HTML/CSS, combined with being sensible and aware with your design choices; ie. if you implement an image on your page and it's taking over an absurdly large portion of the page, scale it down. 
+
+
+-**What did you learn about adding and formatting elements with CSS in this challenge?**
+
+I learned that almost all formatting can be accomplished in CSS without the need for applying any design in HTML. CSS is meant to be a way to streamline the design process by giving the designer large-scale manipulative control over multiple or individual elements using CSS language, ideally in a linked file. This CSS file kept separate is a good orginizational pratice for the sheer fact that it keeps your HTML "skeleton" separate and clear from your "skin", the CSS. In this way, you can easily refer and find desired elements and the attributes applied to them in the event that you want to change/edit something in the future. Unless you are making a major design overhaul, you generally want to keep the same design, so you can just update the content in the HTML file, and apply minor design changes simultaneously in a CSS file that is linked to it. 

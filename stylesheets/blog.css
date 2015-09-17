@@ -1,0 +1,57 @@
+#titleformat {
+	font-size: 50px;
+	font-family: Arial;
+	position: absolute;
+	top: 45px;
+	left: 15px;
+	width: 100%;
+
+}
+
+#image {
+	position: relative;
+	width: 80%;
+}
+
+#titleformat span {
+	color: white;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	padding: auto;
+	position: absolute;
+}
+
+
+.button-group {
+	display: inline-block;
+	width: auto;
+	float: right;
+	border: 1px solid black;
+	background-color: #09CDA1;
+	margin: auto;
+	padding: 10px;
+	border-radius: 25px;
+}
+
+.column1 {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.column2 {
+	width: 40%;
+	height: 100%;
+	float: right;
+
+
+}
+
+.column2 img {
+	height: auto;
+	max-width: 100%;
+}
+
+footer {
+	clear: both;
+}
