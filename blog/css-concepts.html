@@ -1,0 +1,55 @@
+	<html>
+	<head>
+		<title>A DBC Student's Blog</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+	</head>
+	<body>
+	    <div id="headformat">
+		    <figure>
+		       <img src="http://retrovectors.com/wp-content/uploads/2013/05/80swrigglepattern-thumb-586x198.jpg">
+		    </figure>
+		<p id= "titleformat"><span> DBC & ME:<br />A Dev Student's Journey </span></p>
+		</div>
+    <section>
+             <div class= "button-group"><a href="#" class="button">Twitter</a></div>
+             <div class= "button-group"><a href="#" class="button">GitHub</a></div>
+             <div class= "button-group"><a href="#" class="button">Facebook</a></div>
+             <div class= "button-group"><a href="#" class="button">LinkedIn</a></div>
+    </section>
+
+
+
+
+		<div style="width:1400px; height:3px; background-color:grey"></div>
+		<article>
+		<h1>CSS Sticky Notes: Class and ID Selectors</h1>
+		<div class= "column1">
+		<p> CSS is a markup language considered highly valuable in the realm of web development because of the organizational heirarchy it provides in separating all the design and formatting "skin" elements from the HTML "skeleton" of a website. In this sense, a designer can easily and efficiently navigate to different layers of a working project, to tweak structure or style accordingly and seeing how they would coexist (or clash) in a live construct of the site.  CSS has it's own set of easy to follow syntax rules that allow these systematic changes, to either individual or grouped elements: two of the most invaluable CSS selector tags for doing this are the "class" tag and the "id" tag. I like to think of "class" and "id" as sticky notes reminding your computer to interpret design changes and here's why:
+		</p>
+		<p> The "class" selector acts as a sticky note in CSS that consolidates a change/design you want across multiple elements of a certain type, and labels that change for the group to be interpreted in HTML. Often you do not want to apply the same styling rules to several selectors across your document over and over again in HTML. Rather, you can apply a "class" label to all those elements in HTML and then define the styling for that class in your CSS file that is linked to the document. Say we have some 'div' sections in HTML with several paragraph sections below them. Instead of styling each paragraph, we can assign different parent-div classes with a label (in this case, "fancy"). We can then go to our CSS file and use the syntax "." + "fancy" followed by "{ font-family: cursive; }" to apply a cursive font to all paragraphs with this class label. How easy is that?!
+		</p>
+		<p> Sometimes we want a sticky note that tells us we have very specific styling needs for an individual element in our HTML/CSS file. In this case, we would apply the "ID" label. IDs are assigned to elements in HTML with the word "id" and an equal sign, not unlike the process for assigning a "class". The main difference in syntax comes when you are defining your ID in CSS; while you used a "." to define a class, you would use a "#" to associate your id and its attributes. As you can see in the example to the right, though we have multiple HTML paragraphs in this specific 'div' group, we associated an ID only to the first paragraph. That paragraph alone will receive the formatting we have designated in our linked CSS file. 
+		</p>
+		<p> As it should be apparent to you now, Class and ID selectors are an important aspect of the CSS workflow, intended to make your partitioned format choices organized and that much easier to find. In the event you want to overhaul your design choices, all you have to do is refer back to your CSS file and find the correct ID or Class that you used to apply the style. As we will see in the next blog post, you can get even finer control in the heirachy of organization in CSS using 'Pseudo-Class Selectors'
+		</p>
+		 <section>
+		<nav><a href= "LINK TO FULL BLOG POST">Today's Date</a></nav>
+        </section>
+		</div>
+		<figure>
+		     <div class= "column2"><img src ="class.png"</div>
+		     <div class= "column2"><img src ="id.png"</div>
+		</figure>
+
+      <div style="width:1400px; height:3px; background-color:grey"></div>
+
+		</article>	
+	</body>
+	
+	<footer>
+	    <img src="http://33.media.tumblr.com/tumblr_mamq67QNqE1qztbpfo1_400.gif">
+		<p> &copy; 2015 INSERT EXAMPLE</p>
+	</footer>
+</html>
