@@ -1,0 +1,81 @@
+	<html>
+	<head>
+		<title>A DBC Student's Blog</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+	</head>
+	<body>
+	    <div id="headformat">
+		    <figure>
+		       <img src="http://retrovectors.com/wp-content/uploads/2013/05/80swrigglepattern-thumb-586x198.jpg">
+		    </figure>
+		<p id= "titleformat"><span> DBC & ME:<br />A Dev Student's Journey </span></p>
+		</div>
+    <section>
+             <div class= "button-group"><a href="#" class="button">Twitter</a></div>
+             <div class= "button-group"><a href="#" class="button">GitHub</a></div>
+             <div class= "button-group"><a href="#" class="button">Facebook</a></div>
+             <div class= "button-group"><a href="#" class="button">LinkedIn</a></div>
+    </section>
+
+
+
+
+		<div style="width:1400px; height:3px; background-color:grey"></div>
+		<article>
+		<h1>An Enumerable Method: Cycle</h1>
+		<div class= "column1">
+		<p> To begin, it is handy to understand what an “enumerable” in Ruby is. ‘Enumerables’ are a  classification of methods that provide a way to collect data, and an ability to call/access such data as well as sort it. The ‘enumerable’ class has the innate ability to employ the method ‘each’ on its objects, to perform a grouped-action of ever member it is grouping.  As you can imagine, the enumerable class plays an integral role in Ruby, and are functions you might want to spend a little bit of time familiarizing yourself with. Let’s give it a shot and explore one such enumerable, called “cycle”:
+
+		From Ruby Docs:
+
+		cycle(n=nil) { |obj| block } → nil
+		cycle(n=nil) → Enumerator
+
+		Calls the given block for each element ’n’ times or forever if nil is given.
+
+		Does nothing if a non-positive number is given or the array is empty.
+
+		Returns nil if the loop has finished without getting interrupted.
+
+		If no block is given, an Enumerator is returned instead.
+
+		a = ["a", "b", "c"]
+		a.cycle { |x| puts x }     # print, a, b, c, a, b, c,.. forever.
+		a.cycle(2) { |x| puts x }  # print, a, b, c, a, b, c.
+
+		</p>
+		<p> Ruby is a meta-language, and often the methods you employ will be very literal, self-aware in their labeling: ‘cycle’ is no exception. Cycle will call a given block of code, and for each element in that block, will cycle through it either a specified number of times, or if ‘nil’ is given (no specification is given), will cycle infinitely. For the Ruby Docs example above, you can see for the array above (a), the “.cycle” method is called upon the array in two ways. In the first example, no limitation is set, so the method takes every element in the array and cycles through it forever. In the second example, the cycling function is limited to “2 cycles”, so the the array is printed twice to the console.
+		</p>
+		<p> Here is another example used upon an array, which is collecting strings in the form of days of the week. As you can see, once the last item of the array has been passed through the block, the cycle will repeat itself from the beginning of the array. This will continue forever until a ‘break’ parameter-statement is called. 
+		</p>
+		<p> Another useful way to use this method is to create an object, and then use ‘cycle’ to return the next element in a repeated fashion. This use of the method lets us process each item sequentially, when we want to “thumb” through each object individually and then move on to the next object in line.
+		</p>
+		<p>  Let’s finally look at how this method can be used to cycle through hashes. It is practically identical to the method used to cycle through arrays, with a few noticeable differences. When cycle is used on a hash and a block in provided, “cycle” will pass each key-value pair in the hash to the block resulting in the operation in the block to be performed on the item. Each key/value pari in this processed hash can be treated as either: 1) a two-element array, with the key as element 0 and its corresponding value as element 1, or 2) two separate items, with the key as the first item and its value as the second item. When the last hash item has been performed on the block, “cycle” repeats from the beginning of the hash until a ‘break’ statement is passed on the block.
+		</p>
+		<p>  We can use the same technique that we used with arrays and use cycle to create an object that spits out the next item in a cycling hash. Each time we get an item from the object, it comes in the form of a two-element array where the first element is the key and the second element is the corresponding value.
+		</p>
+		
+		 <section>
+		<nav><a href= "LINK TO FULL BLOG POST">Today's Date</a></nav>
+        </section>
+		</div>
+		<figure>
+		     <div class= "column2"><img src ="enum1.png"</div>
+		     <div class= "column2"><img src ="enum2.png"</div>
+		     <div class= "column2"><img src ="enum3.png"</div>
+		     <div class= "column2"><img src ="enum4.png"</div>
+		     <div class= "column2"><img src ="enum5.png"</div>
+		</figure>
+
+      <div style="width:1400px; height:3px; background-color:grey"></div>
+
+		</article>	
+	</body>
+	
+	<footer>
+	    <img src="http://33.media.tumblr.com/tumblr_mamq67QNqE1qztbpfo1_400.gif">
+		<p> &copy; 2015 INSERT EXAMPLE</p>
+	</footer>
+</html>
