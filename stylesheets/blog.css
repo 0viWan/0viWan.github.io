@@ -39,6 +39,7 @@
 	float: left;
 }
 
+
 .column2 {
 	width: 40%;
 	height: 100%;
@@ -46,12 +47,12 @@
 
 
 }
-
+/*
 .column2 img {
 	height: auto;
 	max-width: 100%;
 }
-
+*/
 footer {
 	clear: both;
 }
