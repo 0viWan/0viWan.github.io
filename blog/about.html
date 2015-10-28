@@ -1,0 +1,58 @@
+  <html>
+  <head>
+    <title>A DBC Student's Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog.css">
+  </head>
+  <body>
+      <div id="headformat">
+        <figure>
+           <img src="http://retrovectors.com/wp-content/uploads/2013/05/80swrigglepattern-thumb-586x198.jpg">
+        </figure>
+    <p id= "titleformat"><span> DBC & ME:<br />A Dev Student's Journey </span></p>
+    </div>
+    <section>
+             <div class= "button-group"><a href="#" class="button">Twitter</a></div>
+             <div class= "button-group"><a href="#" class="button">GitHub</a></div>
+             <div class= "button-group"><a href="#" class="button">Facebook</a></div>
+             <div class= "button-group"><a href="#" class="button">LinkedIn</a></div>
+    </section>
+
+
+
+
+    <div style="width:1400px; height:3px; background-color:grey"></div>
+    <article>
+    <h1>An Intro To Instance Methods and Variables</h1>
+    <div class= "column1">
+    <p> Methods that are available on classes are called class methods while those available on instances are called instance methods.  Instance methods are methods that are defined inside the class body. 
+    </p>
+    <p> We can create a new instance from the Calculator class and call the plus instance method on it like the example below. As you can see this new calculator object has inherited several instance methods that now know how to function as a basic calculator.
+    </p>
+    <p> Classes are objects in Ruby. This means that like other objects they can do do/receive things according to the methods they are indebted with (as in the behavior explained above), but like other objects they also know stuff. This can be done with he class method ‘initialize’, which bestows the class-object with data. When you call ‘new’ on the class Person, and pass the string "Ada" then the method ‘new’ will create a new instance of the class, and call initialize on it, passing the same argument list, which in our case is the single string “Ada". This “person” knows its own name, “Ada”!
+    </p>
+    <p> When we create different variables inside of a class not every method can see the variables that we use. If we want to make a variable visible to different methods inside of a class, we call it an instance variable (indicated by the @ sign). That means that the variable should be visible to the whole instance of the class. If we want a variable that is only visible inside of the method or block that we are working with, that is called a local variable. This whole concept is called the “scope” of a variable. A classes scope is populated with instance variables, in the moment we assign something to them. And they are visible everywhere in this class, that is, in every method that the object has.
+    </p>
+     <section>
+    <nav><a href= "LINK TO FULL BLOG POST">Today's Date</a></nav>
+        </section>
+    </div>
+    <figure>
+         <div class= "column2"><img src ="class1.png"</div>
+         <div class= "column2"><img src ="class2.png"</div>
+         <div class= "column2"><img src ="class3.png"</div>
+         <div class= "column2"><img src ="class4.png"</div>
+    </div>
+    </figure>
+
+      <div style="width:1400px; height:3px; background-color:grey"></div>
+
+    </article>  
+  </body>
+  
+  <footer>
+      <img src="http://33.media.tumblr.com/tumblr_mamq67QNqE1qztbpfo1_400.gif">
+    <p> &copy; 2015 INSERT EXAMPLE</p>
+  </footer>
+</html>
